@@ -21,745 +21,135 @@
             --text-light: #666666;
         }
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--text);
-            line-height: 1.6;
-            background-color: var(--white);
-        }
-        
-        h1, h2, h3, h4, h5 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 600;
-            line-height: 1.3;
-            margin-bottom: 1rem;
-        }
-        
-        h1 {
-            font-size: 3rem;
-        }
-        
-        h2 {
-            font-size: 2.5rem;
-        }
-        
-        h3 {
-            font-size: 1.8rem;
-        }
-        
-        p {
-            margin-bottom: 1rem;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--primary);
-            color: var(--white);
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .btn:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-2px);
-        }
-        
-        .btn-whatsapp {
-            background-color: #25D366;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .btn-whatsapp:hover {
-            background-color: #128C7E;
-        }
-        
-        .btn-instagram {
-            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .btn-instagram:hover {
-            background: linear-gradient(45deg, #2d46b9, #4a3cc4, #6a2c91, #a0226d, #c41e5c, #d41111);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--primary);
-            color: var(--white);
-        }
-        
-        /* Header */
-        header {
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-        }
-        
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .logo-text {
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 1.4rem;
-            letter-spacing: 1px;
-            color: var(--secondary);
-        }
-        
-        .logo-badge {
-            background-color: var(--primary);
-            color: white;
-            font-size: 0.7rem;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-family: 'Inter', sans-serif;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: var(--text);
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            color: var(--primary);
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text);
-        }
-        
-        /* Hero Section */
-        .hero {
-            padding: 150px 0 100px;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/home_background.jpg');
-            background-size: cover;
-            background-position: center 38%;
-            color: var(--white);
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        /* About Section */
-        .about {
-            padding: 100px 0;
-            background-color: var(--light);
-        }
-        
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-        
-        .about-text {
-            flex: 1;
-        }
-        
-        .about-image {
-            flex: 1;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .about-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .experience-badge {
-            display: inline-flex;
-            align-items: center;
-            background-color: var(--primary);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        
-        /* Services Section */
-        .services {
-            padding: 100px 0;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        .section-header h2 {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-        
-        .section-header h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: var(--primary);
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .service-card {
-            background-color: var(--white);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .service-image {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .service-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .service-card:hover .service-image img {
-            transform: scale(1.1);
-        }
-        
-        .service-content {
-            padding: 25px;
-        }
-        
-        .service-content h3 {
-            margin-bottom: 15px;
-        }
-        
-        /* Portfolio Section */
-        .portfolio {
-            padding: 100px 0;
-            background-color: var(--light);
-        }
-        
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-        }
-        
-        .portfolio-item {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-            height: 300px;
-        }
-        
-        .portfolio-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .portfolio-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(139, 115, 85, 0.8);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            padding: 20px;
-            text-align: center;
-            color: var(--white);
-        }
-        
-        .portfolio-item:hover .portfolio-overlay {
-            opacity: 1;
-        }
-        
-        .portfolio-item:hover img {
-            transform: scale(1.1);
-        }
-        
-        /* Process Section */
-        .process {
-            padding: 100px 0;
-        }
-        
-        .process-steps {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 50px;
-        }
-        
-        .process-step {
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
-            padding: 0 20px;
-            margin-bottom: 30px;
-        }
-        
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background-color: var(--primary);
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: 0 auto 20px;
-        }
-        
-        /* Testimonials Section */
-        .testimonials {
-            padding: 100px 0;
-            background-color: var(--light);
-        }
-        
-        .testimonials-slider {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .testimonial {
-            background-color: var(--white);
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            text-align: center;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial-author {
-            font-weight: 600;
-        }
-        
-        /* Contact Section */
-        .contact {
-            padding: 100px 0;
-        }
-        
-        .contact-container {
-            display: flex;
-            gap: 50px;
-        }
-        
-        .contact-info {
-            flex: 1;
-        }
-        
-        .contact-form {
-            flex: 1;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
-        }
-        
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            background-color: var(--primary);
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid var(--gray);
-            border-radius: 4px;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        /* Floating WhatsApp Button */
-        .floating-whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.8rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        
-        .floating-whatsapp:hover {
-            background-color: #128C7E;
-            transform: scale(1.1);
-        }
-        
-        /* Social Media Section */
-        .social-media {
-            padding: 80px 0;
-            background-color: var(--light);
-            text-align: center;
-        }
-        
-        .social-media-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .social-media h2 {
-            margin-bottom: 20px;
-        }
-        
-        .social-media p {
-            margin-bottom: 30px;
-            font-size: 1.1rem;
-        }
-        
-        .instagram-feed {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 30px;
-        }
-        
-        .instagram-item {
-            border-radius: 8px;
-            overflow: hidden;
-            height: 150px;
-            position: relative;
-        }
-        
-        .instagram-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-        
-        .instagram-item:hover img {
-            transform: scale(1.1);
-        }
-        
-        .instagram-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .instagram-item:hover .instagram-overlay {
-            opacity: 1;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--secondary);
-            color: var(--white);
-            padding: 70px 0 20px;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-        }
-        
-        .footer-column {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 30px;
-        }
-        
-        .footer-column h3 {
-            color: var(--white);
-            margin-bottom: 20px;
-            font-size: 1.3rem;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #CCCCCC;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: var(--primary);
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: var(--white);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            background-color: var(--primary);
-            transform: translateY(-3px);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #CCCCCC;
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive */
-        @media (max-width: 992px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            h2 {
-                font-size: 2rem;
-            }
-            
-            .about-content {
-                flex-direction: column;
-            }
-            
-            .contact-container {
-                flex-direction: column;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            nav {
-                position: fixed;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background-color: var(--white);
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-                transform: translateY(-100%);
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.3s ease;
-            }
-            
-            nav.active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                padding: 20px;
-            }
-            
-            nav ul li {
-                margin: 0 0 15px 0;
-            }
-            
-            .hero {
-                padding: 120px 0 80px;
-            }
-            
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .process-steps {
-                flex-direction: column;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .hero-buttons .btn {
-                width: 100%;
-                max-width: 300px;
-                text-align: center;
-            }
-            
-            .logo-text {
-                font-size: 1.2rem;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .logo {
-                font-size: 1.3rem;
-            }
-            
-            .logo-text {
-                font-size: 1rem;
-            }
+        * {margin:0; padding:0; box-sizing:border-box;}
+        body {font-family:'Inter', sans-serif; color:var(--text); line-height:1.6; background-color:var(--white);}
+        h1,h2,h3,h4,h5{font-family:'Playfair Display', serif; font-weight:600; line-height:1.3; margin-bottom:1rem;}
+        h1{font-size:3rem;}
+        h2{font-size:2.5rem;}
+        h3{font-size:1.8rem;}
+        p{margin-bottom:1rem;}
+        .container{width:100%; max-width:1200px; margin:0 auto; padding:0 20px;}
+        .btn{display:inline-block; padding:12px 30px; background-color:var(--primary); color:var(--white); text-decoration:none; border-radius:4px; font-weight:500; transition:all 0.3s ease; border:none; cursor:pointer;}
+        .btn:hover{background-color:var(--primary-dark); transform:translateY(-2px);}
+        .btn-whatsapp{background-color:#25D366; display:flex; align-items:center; gap:8px;}
+        .btn-whatsapp:hover{background-color:#128C7E;}
+        .btn-instagram{background:linear-gradient(45deg,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D); display:flex; align-items:center; gap:8px;}
+        .btn-instagram:hover{background:linear-gradient(45deg,#2d46b9,#4a3cc4,#6a2c91,#a0226d,#c41e5c,#d41111);}
+        .btn-outline{background-color:transparent; border:2px solid var(--primary); color:var(--primary);}
+        .btn-outline:hover{background-color:var(--primary); color:var(--white);}
+        
+        header{background-color:var(--white); box-shadow:0 2px 10px rgba(0,0,0,0.1); position:fixed; width:100%; z-index:1000;}
+        .header-container{display:flex; justify-content:space-between; align-items:center; padding:15px 20px;}
+        .logo{font-family:'Playfair Display', serif; font-size:1.5rem; font-weight:700; color:var(--primary); text-decoration:none; display:flex; align-items:center; gap:10px;}
+        .logo-text{font-family:'Inter', sans-serif; font-weight:700; font-size:1.4rem; letter-spacing:1px; color:var(--secondary);}
+        .logo-badge{background-color:var(--primary); color:white; font-size:0.7rem; padding:2px 8px; border-radius:12px; font-family:'Inter', sans-serif;}
+        nav ul{display:flex; list-style:none;}
+        nav ul li{margin-left:30px;}
+        nav ul li a{text-decoration:none; color:var(--text); font-weight:500; transition:color 0.3s ease;}
+        nav ul li a:hover{color:var(--primary);}
+        .mobile-menu-btn{display:none; background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text);}
+        
+        .hero{padding:150px 0 100px; background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/home_background.jpg'); background-size:cover; background-position:center 38%; color:var(--white); text-align:center;}
+        .hero h1{font-size:3.5rem; margin-bottom:20px;}
+        .hero p{font-size:1.2rem; max-width:700px; margin:0 auto 30px;}
+        .hero-buttons{display:flex; gap:15px; justify-content:center; flex-wrap:wrap;}
+        
+        .about{padding:100px 0; background-color:var(--light);}
+        .about-content{display:flex; align-items:center; gap:50px;}
+        .about-text{flex:1;}
+        .about-image{flex:1; border-radius:8px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+        .about-image img{width:100%; height:auto; display:block;}
+        .experience-badge{display:inline-flex; align-items:center; background-color:var(--primary); color:white; padding:8px 20px; border-radius:30px; font-weight:600; margin-bottom:20px;}
+        
+        .services{padding:100px 0;}
+        .section-header{text-align:center; margin-bottom:60px;}
+        .section-header h2{position:relative; display:inline-block; margin-bottom:15px;}
+        .section-header h2::after{content:''; position:absolute; bottom:-10px; left:50%; transform:translateX(-50%); width:80px; height:3px; background-color:var(--primary);}
+        .services-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px;}
+        .service-card{background-color:var(--white); border-radius:8px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.05); transition:transform 0.3s ease;}
+        .service-card:hover{transform:translateY(-10px);}
+        .service-image{height:200px; overflow:hidden;}
+        .service-image img{width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;}
+        .service-card:hover .service-image img{transform:scale(1.1);}
+        .service-content{padding:25px;}
+        .service-content h3{margin-bottom:15px;}
+        
+        .portfolio{padding:100px 0; background-color:var(--light);}
+        .portfolio-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(350px,1fr)); gap:30px;}
+        .portfolio-item{position:relative; border-radius:8px; overflow:hidden; height:300px;}
+        .portfolio-item img{width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;}
+        .portfolio-overlay{position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(139,115,85,0.8); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s ease; padding:20px; text-align:center; color:var(--white);}
+        .portfolio-item:hover .portfolio-overlay{opacity:1;}
+        .portfolio-item:hover img{transform:scale(1.1);}
+        
+        .process{padding:100px 0;}
+        .process-steps{display:flex; justify-content:space-between; flex-wrap:wrap; margin-top:50px;}
+        .process-step{flex:1; min-width:200px; text-align:center; padding:0 20px; margin-bottom:30px;}
+        .step-number{width:60px; height:60px; background-color:var(--primary); color:var(--white); border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:1.5rem; font-weight:700; margin:0 auto 20px;}
+        
+        .testimonials{padding:100px 0; background-color:var(--light);}
+        .testimonials-slider{max-width:800px; margin:0 auto;}
+        .testimonial{background-color:var(--white); padding:40px; border-radius:8px; box-shadow:0 5px 15px rgba(0,0,0,0.05); text-align:center;}
+        .testimonial-text{font-style:italic; margin-bottom:20px;}
+        .testimonial-author{font-weight:600;}
+        
+        .contact{padding:100px 0;}
+        .contact-container{display:flex; gap:50px; flex-wrap:wrap;}
+        .contact-info{flex:1; min-width:280px;}
+        .contact-form{flex:1; min-width:280px;}
+        .contact-item{display:flex; align-items:flex-start; margin-bottom:30px;}
+        .contact-icon{width:50px; height:50px; background-color:var(--primary); color:var(--white); border-radius:50%; display:flex; justify-content:center; align-items:center; margin-right:15px; flex-shrink:0;}
+        .form-group{margin-bottom:20px;}
+        .form-group label{display:block; margin-bottom:8px; font-weight:500;}
+        .form-control{width:100%; padding:12px 15px; border:1px solid var(--gray); border-radius:4px; font-family:'Inter', sans-serif; font-size:1rem;}
+        textarea.form-control{min-height:150px; resize:vertical;}
+        
+        .floating-whatsapp{position:fixed; bottom:20px; right:20px; background-color:#25D366; color:white; width:60px; height:60px; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:1.8rem; box-shadow:0 4px 10px rgba(0,0,0,0.2); z-index:1000; transition:all 0.3s ease; text-decoration:none;}
+        .floating-whatsapp:hover{background-color:#128C7E; transform:scale(1.1);}
+        
+        .social-media{padding:80px 0; background-color:var(--light); text-align:center;}
+        .social-media-content{max-width:600px; margin:0 auto;}
+        .social-media h2{margin-bottom:20px;}
+        .social-media p{margin-bottom:30px; font-size:1.1rem;}
+        .instagram-feed{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:15px; margin-top:30px;}
+        .instagram-item{border-radius:8px; overflow:hidden; height:150px; position:relative;}
+        .instagram-item img{width:100%; height:100%; object-fit:cover; transition:transform 0.3s ease;}
+        .instagram-item:hover img{transform:scale(1.1);}
+        .instagram-overlay{position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); display:flex; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s ease;}
+        .instagram-item:hover .instagram-overlay{opacity:1;}
+        
+        footer{background-color:var(--secondary); color:var(--white); padding:70px 0 20px;}
+        .footer-content{display:flex; justify-content:space-between; flex-wrap:wrap; margin-bottom:50px;}
+        .footer-column{flex:1; min-width:250px; margin-bottom:30px;}
+        .footer-column h3{color:var(--white); margin-bottom:20px; font-size:1.3rem;}
+        .footer-links{list-style:none;}
+        .footer-links li{margin-bottom:10px;}
+        .footer-links a{color:#CCCCCC; text-decoration:none; transition:color 0.3s ease;}
+        .footer-links a:hover{color:var(--primary);}
+        .social-links{display:flex; gap:15px;}
+        .social-links a{display:inline-flex; justify-content:center; align-items:center; width:40px; height:40px; background-color:rgba(255,255,255,0.1); border-radius:50%; color:var(--white); text-decoration:none; transition:all 0.3s ease;}
+        .social-links a:hover{background-color:var(--primary); transform:translateY(-3px);}
+        .copyright{text-align:center; padding-top:20px; border-top:1px solid rgba(255,255,255,0.1); color:#CCCCCC; font-size:0.9rem;}
+        
+        @media (max-width:992px){h1{font-size:2.5rem;} h2{font-size:2rem;} .about-content{flex-direction:column;} .contact-container{flex-direction:column;}}
+        @media (max-width:768px){
+            .mobile-menu-btn{display:block;}
+            nav{position:fixed; top:70px; left:0; width:100%; background-color:var(--white); box-shadow:0 5px 10px rgba(0,0,0,0.1); transform:translateY(-100%); opacity:0; visibility:hidden; transition:all 0.3s ease;}
+            nav.active{transform:translateY(0); opacity:1; visibility:visible;}
+            nav ul{flex-direction:column; padding:20px;}
+            nav ul li{margin:0 0 15px 0;}
+            .hero{padding:120px 0 80px;}
+            .hero h1{font-size:2.2rem;}
+            .process-steps{flex-direction:column;}
+            .hero-buttons{flex-direction:column; align-items:center;}
+            .hero-buttons .btn{width:100%; max-width:300px; text-align:center;}
+            .logo-text{font-size:1.2rem;}
+        }
+        @media (max-width:576px){
+            .hero h1{font-size:1.8rem;}
+            .portfolio-grid{grid-template-columns:1fr;}
+            .logo{font-size:1.3rem;}
+            .logo-text{font-size:1rem;}
         }
     </style>
 </head>
@@ -771,7 +161,7 @@
                 <div class="logo-text">Dal Pozzo Móveis Personalizados</div>
                 <span class="logo-badge">30 anos</span>
             </a>
-            <button class="mobile-menu-btn">☰</button>
+            <button class="mobile-menu-btn" aria-label="Abrir menu">☰</button>
             <nav>
                 <ul>
                     <li><a href="#home">Início</a></li>
@@ -816,356 +206,4 @@
                     <a href="#services" class="btn btn-outline">Conheça Nossos Serviços</a>
                 </div>
                 <div class="about-image">
-                    <img src="images/about_image.jpg" alt="Oficina de marcenaria Dal Pozzo">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nossos Serviços</h2>
-                <p>Oferecemos soluções completas em móveis personalizados para todos os ambientes</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/kitchen_image_collection.jpg" alt="Cozinhas planejadas">
-                    </div>
-                    <div class="service-content">
-                        <h3>Cozinhas Planejadas</h3>
-                        <p>Projetamos cozinhas funcionais e elegantes, otimizando cada centímetro do espaço com móveis sob medida que combinam praticidade e estilo.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/closet_image_collection.jpg" alt="Closets e guarda-roupas">
-                    </div>
-                    <div class="service-content">
-                        <h3>Closets e Guarda-roupas</h3>
-                        <p>Desenvolvemos closets e guarda-roupas sob medida que organizam seus pertences com elegância, maximizando o espaço e facilitando o dia a dia.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/entry_hall_image_colletction.jpg" alt="Hall de entrada">
-                    </div>
-                    <div class="service-content">
-                        <h3>Hall de Entrada</h3>
-                        <p>Criamos móveis para hall de entrada que causam uma primeira impressão marcante, combinando funcionalidade e design acolhedor.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/comercial_area.jpg" alt="Móveis para áreas comerciais">
-                    </div>
-                    <div class="service-content">
-                        <h3>Áreas Comerciais</h3>
-                        <p>Projetamos balcões, prateleiras, vitrines e outros móveis comerciais que potencializam a experiência do cliente e a identidade da marca.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nossos Trabalhos</h2>
-                <p>Conheça alguns dos projetos que realizamos para nossos clientes</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="images\modern_kitchen.jpg" alt="Projeto de cozinha">
-                    <div class="portfolio-overlay">
-                        <h3>Cozinha Moderna</h3>
-                        <p>Projeto completo com ilha central e acabamento em madeira maciça</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/configured_room.jpg" alt="Projeto de dormitório">
-                    <div class="portfolio-overlay">
-                        <h3>Quarto Conjugado</h3>
-                        <p>Cama, cabeceira e guarda-roupas integrados em design contemporâneo</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Projeto de escritório">
-                    <div class="portfolio-overlay">
-                        <h3>Escritório Executivo</h3>
-                        <p>Mesa, estante e armários em nogueira com detalhes em aço</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process" id="process">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nosso Processo</h2>
-                <p>Como trabalhamos para transformar sua ideia em realidade</p>
-            </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3>Consulta</h3>
-                    <p>Conversamos para entender suas necessidades, preferências e orçamento.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3>Projeto</h3>
-                    <p>Criamos um projeto personalizado com desenhos e especificações detalhadas.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3>Aprovação</h3>
-                    <p>Apresentamos o projeto e ajustamos conforme seu feedback até a aprovação final.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h3>Execução</h3>
-                    <p>Fabricamos os móveis com materiais de qualidade e acabamento impecável.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <h3>Instalação</h3>
-                    <p>Entregamos e instalamos os móveis no local, garantindo perfeita funcionalidade.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Media Section -->
-    <section class="social-media">
-        <div class="container">
-            <div class="social-media-content">
-                <h2>Siga-nos no Instagram</h2>
-                <p>Acompanhe nossos últimos trabalhos e inspire-se com nossas criações. Siga <strong>@dpm.dalpozzo</strong> para ver mais projetos incríveis!</p>
-                <a href="https://instagram.com/dpm.dalpozzo" class="btn btn-instagram" target="_blank">
-                    <i class="fab fa-instagram"></i> Seguir @dpm.dalpozzo
-                </a>
-                <div class="instagram-feed">
-                    <div class="instagram-item">
-                        <img src="images/option_1.jpg" alt="Projeto de móveis">
-                        <div class="instagram-overlay">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </div>
-                    </div>
-                    <div class="instagram-item">
-                        <img src="images/option_2.jpg" alt="Projeto de móveis">
-                        <div class="instagram-overlay">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </div>
-                    </div>
-                    <div class="instagram-item">
-                        <img src="images/option_3.jpg" alt="Projeto de móveis">
-                        <div class="instagram-overlay">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </div>
-                    </div>
-                    <div class="instagram-item">
-                        <img src="images/option_4.jpg" alt="Projeto de móveis">
-                        <div class="instagram-overlay">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>O Que Nossos Clientes Dizem</h2>
-                <p>Depoimentos de quem já confiou em nosso trabalho</p>
-            </div>
-            <div class="testimonials-slider">
-                <div class="testimonial">
-                    <p class="testimonial-text">"Fiquei impressionada com a qualidade dos móveis que a Dal Pozzo fez para minha cozinha. O projeto foi exatamente como eu imaginei e o acabamento é impecável. Super recomendo!"</p>
-                    <p class="testimonial-author">Maria Silva, Juína - MT</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Entre em Contato</h2>
-                <p>Solicite um orçamento ou tire suas dúvidas</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h3>Endereço</h3>
-                            <p>Avenida JK, 277S, Bairro Setor de Serviços<br>Juína - MT</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                   <h3>Telefone / WhatsApp</h3>
-<p><a href="https://wa.me/5566996710912" target="_blank">(66) 99671-0912</a></p>
-<p><a href="https://wa.me/5566992089752" target="_blank">(66) 99208-9752</a></p>
-<p><a href="https://wa.me/5566999794442" target="_blank">(66) 99979-4442</a></p>
-</div>
-</div>
-<div class="contact-item">
-    <div class="contact-icon">✉️</div>
-    <div>
-        <h3>E-mail</h3>
-        <p><a href="mailto:moveisdalpozzo@hotmail.com">moveisdalpozzo@hotmail.com</a></p>
-    </div>
-</div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🕒</div>
-                        <div>
-                            <h3>Horário de Atendimento</h3>
-                            <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Telefone</label>
-                            <input type="tel" id="phone" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Assunto</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/5566996710912?text=Olá! Gostaria de solicitar um orçamento para móveis personalizados." class="floating-whatsapp" target="_blank" aria-label="Entre em contato pelo WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Dal Pozzo Móveis Personalizados</h3>
-                    <p>Especialistas em móveis personalizados há 30 anos, transformando ambientes com design, qualidade e funcionalidade em Juína - MT.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/dpm.dalpozzo" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/5566996710912" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Links Rápidos</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#services">Serviços</a></li>
-                        <li><a href="#portfolio">Portfólio</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Serviços</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Cozinhas Planejadas</a></li>
-                        <li><a href="#">Dormitórios e Closets</a></li>
-                        <li><a href="#">Escritórios</a></li>
-                        <li><a href="#">Móveis Comerciais</a></li>
-                        <li><a href="#">Projetos Personalizados</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contato</h3>
-                    <ul class="footer-links">
-                        <li>📍 Av. JK, 277S, Setor de Serviços</li>
-                        <li>📍 Juína - MT</li>
-                        <li>📞 (66) 99671-0912</li>
-                        <li><a href="https://instagram.com/dpm.dalpozzo" target="_blank">📷 @dpm.dalpozzo</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 Dal Pozzo Móveis Personalizados. 30 anos de excelência em móveis sob medida. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-    
-    <script>
-        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="L4wgtbNDmbSK8W61bbHA8";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
-    
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const nav = document.querySelector('nav');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on a link
-        const navLinks = document.querySelectorAll('nav a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-            });
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Form submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Obrigado pelo seu contato! Entraremos em breve em contato com você.');
-            this.reset();
-        });
-    </script>
-</body>
-</html>
+                    <img src="images/about_image.jpg" alt="Oficina de marcenaria
